@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CBU Ticketbox</title>
+  <link rel="stylesheet" type="text/css" href="./css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+  <script src="./js/app2.js" defer></script>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <img class="logo" src="./images/CBU.png" height="50" width="100" alt="logo">
+      <h1>Ticket Center</h1>
+    </header>
+    <form>
+      <div class="form-row">
+        <div class="form-field">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" />
+        </div>
+        <div class="form-field">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input type="text" id="email" />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field">
+          <label for="ticket-quantity">Ticket Quantity</label>
+          <select id="ticket-quantity">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <legend>Ticket Type</legend>
+          <div>
+            <input type="radio" id="general" value="general">
+            <label for="general">General Admission</label>
+          </div>
+          <div>
+            <input type="radio" id="vip" value="vip">
+            <label for="vip">VIP</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-row checkbox">
+        <fieldset>
+          <legend>How did you hear about this event?</legend>
+          <div>
+            <input type="checkbox" id="friend" value="friend">
+            <label for="friend">Friend</label>
+          </div>
+          <div>
+            <input type="checkbox" id="publication" value="publication">
+            <label for="publication">Publication</label>
+          </div>
+          <div>
+            <input type="checkbox" id="social-media" value="social">
+            <label for="social-media">Social Media</label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="form-row vertical">
+        <label for="requests">Special Requests</label>
+        <textarea id="requests" ></textarea>
+      </div>
+      <div class="form-row vertical agreement checkbox">
+        <fieldset>
+          <legend>Purchase Agreement</legend>
+          <p>I, {{ fullName }}, wish to buy {{ ticketDescription }} tickets.
+             I understand that all ticket sales are final.</p>
+          <input type="checkbox" name="agreement" id="agree">
+          <label for="agree">I Agree</label>
+        </fieldset>
+      </div>
+      <div class="form-row vertical">
+        <label for="signature">Signature</label>
+        <input id="signature" class="signature" />
+      </div>
+      <div>
+        <button type="reset" class="reset">Reset</button>
+        <button type="submit">Confirm Tickets</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

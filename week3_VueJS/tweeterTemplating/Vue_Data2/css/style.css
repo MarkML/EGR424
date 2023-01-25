@@ -1,0 +1,149 @@
+/* Site-Wide Styles */
+
+html {
+  font-size: 14px;
+  font-family: 'Oxygen', sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #4c7ef3;
+  color: #ffffff;
+}
+
+.logo {
+  padding-right: 1.28rem;
+}
+
+h1 {
+  flex: 1;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.43rem;
+  font-weight: 900;
+  letter-spacing: 0.3px;
+}
+
+.time {
+  padding-right: 4.29rem;
+  font-size: 1.28rem;
+  font-weight: bold;
+}
+
+/* Form Elements */
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1.86rem 20%;
+}
+
+input,
+textarea,
+select {
+  padding: .71rem;
+  margin-right: 1.21rem;
+  background-color: #ffffff;
+  border: solid 1px #979797;
+}
+
+textarea {
+  height: 5.2rem;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-border-radius: 0px;
+  background-image: url("https://content.codecademy.com/courses/vue-instances/triangle.svg");
+  background-position: 97% 50%;
+  background-repeat: no-repeat;
+  background-size: 14px;
+}
+
+label {
+  margin-bottom: .71rem;
+  font-weight: bold;
+}
+
+legend {
+  margin-bottom: .71rem;;
+  font-weight: bold;
+}
+
+.invalid {
+  border: 1px solid #fa4359;
+}
+
+.form-row {
+  display: flex;
+  margin-bottom: 2.14rem;
+}
+
+.form-row.vertical {
+  flex-direction: column;
+}
+
+.form-row > * {
+  flex: 1;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox > * {
+  margin-bottom: .71rem;
+}
+
+.checkbox input {
+  font-size: 1.29rem;
+}
+
+.checkbox label {
+  font-weight: normal;
+}
+
+.agreement.form-row {
+  margin-bottom: 0;
+}
+
+.agreement fieldset > * {
+  margin-bottom: .71rem;
+}
+
+.signature {
+  font-family: 'Petit Formal Script', cursive;
+}
+
+button {
+  cursor: pointer;
+  padding: .85rem 2.29rem;
+  border-radius: 4px;
+  margin-right: 1.36rem;
+  background-color: #4c7ef3;
+  font-size: 1.14rem;
+  color: #ffffff;
+  transition: .25s;
+}
+
+button:hover {
+  background-color: #1e5df1;
+}
+
+button.reset {
+  background-color: #e85b49;
+}
+
+button.reset:hover {
+  background-color: #ea2e16;
+}
